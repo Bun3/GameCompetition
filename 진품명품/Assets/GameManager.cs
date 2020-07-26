@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public float time = 0;
     [SerializeField]private int score = 0;
-    public int Score{ get=>score; set{ score = value; Managers.Ui.scoreText.text = score.ToString(); } }
+    public int Score{ get=>score; set{ score = value; Managers.Ui.scoreText.text = "Score : " + score.ToString(); } }
     public CBCtrl cb;
     public Spawner spawner;
 
