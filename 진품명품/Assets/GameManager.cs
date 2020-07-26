@@ -10,8 +10,6 @@ public class GameManager : MonoBehaviour
     public CBCtrl cb;
     public Spawner spawner;
 
-    public GameObject curioObject;
-
     private void Start()
     {
         StartCoroutine(StartCoroutine(time));
@@ -24,9 +22,9 @@ public class GameManager : MonoBehaviour
         StartCoroutine(spawner.SpawnerCoroutine(time));
     }
 
-    public void Check(string name)
+    public void Check(bool isTrue)
     {
-        if (curioObject.name + "(Clone)" == name) Score++;
+        if (isTrue) Score++;
         else Score--;
     }
 }

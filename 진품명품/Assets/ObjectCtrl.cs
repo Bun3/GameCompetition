@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectCtrl : MonoBehaviour
 {
+    public bool isTrue;
     CBCtrl cb;
 
     private void OnCollisionEnter(Collision collision)

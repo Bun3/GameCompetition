@@ -12,7 +12,9 @@ public class Spawner : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
 
-            Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform.position, transform.rotation);
+            int random = Random.Range(0, prefabs.Length);
+
+            Instantiate(prefabs[random], transform.position, prefabs[random].transform.rotation);
         }
     }
 }

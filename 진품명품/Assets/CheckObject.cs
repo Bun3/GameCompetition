@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class CheckObject : MonoBehaviour
 {
+    public bool isTrue = false;
+
     private void OnCollisionEnter(Collision collision)
     {
-        Managers.Game.Check(collision.transform.name);
-        Destroy(collision.transform.gameObject);
+        if (collision.rigidbody.transform.CompareTag("Object"))
+        {
+            Managers.Game.Check(isTrue == collision.rigidbody.transform.GetComponent<ObjectCtrl>().isTrue);
+            Destroy(collision.transform.gameObject);
+        }
     }
 }
