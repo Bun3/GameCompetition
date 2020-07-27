@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour
 {
+    public float speed = 1f;
+
     Transform camTra;
     Transform fixedTra;
     Transform fixedObj;
@@ -78,6 +80,6 @@ public class PlayerCtrl : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.Translate(horizontal, 0, vertical);
+        transform.Translate(new Vector3(horizontal, 0, vertical) * speed);
     }
 }
