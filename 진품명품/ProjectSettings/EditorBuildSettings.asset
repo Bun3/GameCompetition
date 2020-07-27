@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectScene.unity
     guid: 6ecf3ada0b627244f944ff5769cef627
   - enabled: 1
-    path: Assets/Scenes/IngameScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/IngameScene1.unity
+    guid: a251255a02964234b908b2505f10cd0f
+  - enabled: 1
+    path: Assets/Scenes/IngameScene2.unity
+    guid: 81e469ad377b05546895b87571ea5c0a
+  - enabled: 1
+    path: Assets/Scenes/IngameScene3.unity
+    guid: 597e7104616538e46b69f1c1b5c5ac3a
   m_configObjects: {}
